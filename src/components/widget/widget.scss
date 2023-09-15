@@ -1,0 +1,45 @@
+  .item-widget {
+      width: 100%;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #f0f0f0;
+      background: white;
+
+      .title {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 16px;
+      }
+
+      .price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4px;
+
+          .price-default {
+              font-size: 30px;
+              font-weight: 700;
+              margin-right: 16px;
+              line-height: 1.6;
+          }
+
+          .price-count {
+              display: flex;
+              align-items: center;
+              font-size: 17px;
+              color: #ff6b72;
+              font-weight: 500;
+
+              svg {
+                  margin-left: 3px;
+                  width: 14px;
+              }
+
+          }
+      }
+
+      .compare {
+          font-size: 14px;
+          color: #455560;
+      }
+  }

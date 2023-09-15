@@ -1,0 +1,45 @@
+.main-layout-app {
+    display: flex;
+
+    .main-left {
+        flex: 1;
+    }
+
+    .main-left-hide {
+        flex: 0.3;
+    }
+
+    .main-right {
+        max-height: calc(100vh - 74px);
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            margin-right: 5px;
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 4px;
+        }
+
+        &:hover::-webkit-scrollbar {
+            width: 4px;
+            height: 10px;
+            background-color: #f5f5f5;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background-color: #8891a0;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        padding: 25px;
+        background: #fafafb;
+        flex: 6.4;
+    }
+}

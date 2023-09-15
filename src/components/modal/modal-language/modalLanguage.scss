@@ -1,0 +1,54 @@
+.modal-language {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    position: absolute;
+    top: calc(100% + 34px);
+    right: -16px;
+    width: 182px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #fff;
+    z-index: 12;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+    &::after {
+        position: absolute;
+        top: -9px;
+        right: 34px;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 8px solid #fff;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+
+    .list-language {
+        .item-language {
+            padding: 7.5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+
+            .img {
+                margin-right: 16px;
+            }
+
+            .nation {
+                display: block;
+                flex: 1;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: rgba(69, 85, 96, 0.04)
+            }
+
+            .anticon {
+                padding: unset;
+                font-size: 14px;
+            }
+        }
+    }
+}
